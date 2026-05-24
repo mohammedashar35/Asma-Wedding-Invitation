@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wedding Invitation - Nikah Ceremony of Hr.S.Asma and J.Abdul Kadher. Join us on July 19, 2026.">
+  <title>Wedding Invitation - Asma & Abdul Kadher</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Font Awesome 6 (for premium icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Glowing Ambient Orbs -->
+  <div class="ambient-glows">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+  </div>
+
+  <!-- Particle Background Layer -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Main Luxury Page Container -->
+  <main class="main-container">
+
+    <!-- The Elegant Wedding Invitation Card -->
+    <div class="invitation-card">
+
+      <!-- Inside Card Double Gold Borders -->
+      <div class="card-border-outer"></div>
+      <div class="card-border-inner"></div>
+
+      <!-- Hanging Swaying Lanterns (Realistic Antique Gold PNGs) -->
+      <!-- Left Lantern -->
+      <div class="hanging-lantern lantern-left">
+        <div class="lantern-chain"></div>
+        <img src="gold_lantern.png" alt="Golden Wedding Lantern Left">
+      </div>
+
+      <!-- Right Lantern -->
+      <div class="hanging-lantern lantern-right">
+        <div class="lantern-chain"></div>
+        <img src="gold_lantern.png" alt="Golden Wedding Lantern Right">
+      </div>
+
+      <!-- Gorgeous Golden & Peach Watercolor Rose Corners -->
+      <img src="floral_corner.png" class="floral-corner corner-tl" alt="Peach Rose Corner Top Left">
+      <img src="floral_corner.png" class="floral-corner corner-tr" alt="Peach Rose Corner Top Right">
+      <img src="floral_corner.png" class="floral-corner corner-bl" alt="Peach Rose Corner Bottom Left">
+      <img src="floral_corner.png" class="floral-corner corner-br" alt="Peach Rose Corner Bottom Right">
+
+      <!-- Invitation Card Contents -->
+      <div class="card-content">
+
+        <!-- =========================================
+             1. TOP SECTION (Bismillah)
+             ========================================= -->
+        <div class="bismillah-wrapper reveal-fade-up">
+          <h2 class="bismillah-arabic">
+            <span class="bismillah-ornament">❖</span>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ<span class="bismillah-ornament">❖</span>
+          </h2>
+          <p class="bismillah-translation">In the Name of Allah, The Most Merciful</p>
+        </div>
+
+        <div class="divider-heart reveal-fade-up">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <!-- =========================================
+             2. MAIN TITLE
+             ========================================= -->
+        <h1 class="main-title reveal-fade-up delay-1">Wedding Invitation</h1>
+
+        <!-- =========================================
+             3. INVITATION TEXT
+             ========================================= -->
+        <p class="invitation-text reveal-fade-up delay-2">
+          Together with our families, we request the honour of your presence at our Nikah ceremony.
+        </p>
+
+        <!-- =========================================
+             4. COUPLE ILLUSTRATION SECTION (Matches Sample Image)
+             ========================================= -->
+        <div class="couple-showcase reveal-zoom-in delay-2">
+
+          <!-- Animated Falling Petals Local Container -->
+          <div class="petals-container" id="petals-container"></div>
+
+          <!-- Faceless Premium Muslim Couple (Groom in Black Suit, Bride in white veil looking at each other) -->
+          <img class="couple-img" src="muslim_couple.png" alt="Muslim Bride & Groom Illustration">
+
+
+        </div>
+
+        <!-- =========================================
+             5. BRIDE & GROOM NAMES SECTION
+             ========================================= -->
+        <div class="names-section reveal-fade-up">
+
+          <!-- Bride -->
+          <div class="name-block">
+            <h3 class="bride-name">Hr.S.Asma</h3>
+            <div class="name-separator"></div>
+            <span class="name-degree">(Aalima B.A)</span>
+          </div>
+
+          <!-- Decorative Ampersand -->
+          <div class="ampersand">&</div>
+
+          <!-- Groom -->
+          <div class="name-block">
+            <h3 class="groom-name">J.Abdul Kadher</h3>
+            <div class="name-separator"></div>
+            <span class="name-degree">(B.E Assistant Engineer)</span>
+          </div>
+
+        </div>
+
+        <!-- =========================================
+             6. EVENT INFO SECTION (Sunday, July 19 2026, 11:00 AM)
+             ========================================= -->
+        <div class="event-section reveal-zoom-in">
+          <div class="event-inner-border">
+            
+            <!-- Left Pane: Day -->
+            <div class="event-pane">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="event-pane-text">Sunday</span>
+            </div>
+
+            <!-- Center Pane: Date -->
+            <div class="event-pane event-pane-center">
+              <div class="date-ornament-box">
+                <span class="date-month">July</span>
+                <div class="date-day-num-wrapper">
+                  <!-- Decorative Left Leaf Branch SVG -->
+                  <svg class="date-branch-left" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 10 Q10 15, 12 25 T15 45" stroke="#d4a25a" stroke-width="1.2"/>
+                    <circle cx="7" cy="15" r="2" fill="#d4a25a"/>
+                    <circle cx="4" cy="28" r="2" fill="#d4a25a"/>
+                    <circle cx="8" cy="40" r="2" fill="#d4a25a"/>
+                  </svg>
+                  
+                  <span class="date-day-num">19</span>
+                  
+                  <!-- Decorative Right Leaf Branch SVG -->
+                  <svg class="date-branch-right" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 10 Q10 15, 8 25 T5 45" stroke="#d4a25a" stroke-width="1.2"/>
+                    <circle cx="13" cy="15" r="2" fill="#d4a25a"/>
+                    <circle cx="16" cy="28" r="2" fill="#d4a25a"/>
+                    <circle cx="12" cy="40" r="2" fill="#d4a25a"/>
+                  </svg>
+                </div>
+                <span class="date-year">2026</span>
+              </div>
+            </div>
+
+            <!-- Right Pane: Time -->
+            <div class="event-pane">
+              <i class="fa-regular fa-clock"></i>
+              <span class="event-pane-text">11:00 AM</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- =========================================
+             7. VENUE SECTION
+             ========================================= -->
+        <div class="venue-section reveal-fade-up">
+          <div class="venue-header">
+            <h2 class="venue-title">Venue</h2>
+          </div>
+          
+          <div class="venue-address-block">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="venue-address">
+              <strong>X78J+9F3 Courtallam</strong>,<br>
+              Madurai - Tenkasi Main Rd,<br>
+              Ilanji, Tamil Nadu 627805
+            </p>
+          </div>
+
+          <!-- Centered Glowing Double-Bordered QR Code Box -->
+          <div class="qr-container reveal-zoom-in">
+            <!-- Dynamically generated REAL QR code pointing to maps location with text brown color theme -->
+            <img class="qr-image" src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https%3A%2F%2Fmaps.app.goo.gl%2F7X2VWLmUxUyND7gq5&color=6d3b1f" alt="Google Maps Location QR Code">
+          </div>
+
+          <!-- Elegant Gradient Location Button -->
+          <a href="https://maps.app.goo.gl/7X2VWLmUxUyND7gq5" target="_blank" class="btn-open-location">
+            <i class="fa-solid fa-map-location-dot"></i> Open Location
+          </a>
+        </div>
+
+        <!-- =========================================
+             8. FOOTER SECTION
+             ========================================= -->
+        <footer class="footer-section reveal-fade-up">
+          <div class="footer-divider">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h4 class="footer-text">With Love & Duas</h4>
+        </footer>
+
+      </div> <!-- /card-content -->
+    </div> <!-- /invitation-card -->
+
+  </main>
+
+  <!-- Ambient Music Player Float Button Widget -->
+  <div class="audio-player-widget">
+    <button id="music-toggle" class="music-toggle-btn" aria-label="Toggle ambient music">
+      <i class="fas fa-music"></i>
+    </button>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Core Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
