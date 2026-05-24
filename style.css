@@ -46,6 +46,7 @@ body {
     radial-gradient(circle at 50% 50%, rgba(255, 245, 235, 0.75) 0%, rgba(245, 218, 185, 0.82) 40%, rgba(212, 162, 90, 0.92) 100%),
     url('background.png') no-repeat center center fixed;
   background-size: cover;
+  background-attachment: scroll; /* FIXED */
   background-blend-mode: multiply;
 }
 
