@@ -111,23 +111,28 @@ body {
 .invitation-card {
   width: 100%;
   max-width: 860px;
-  /* Semi-transparent luxury glassmorphism with light cream gradient for perfect legibility */
-  background: 
-    radial-gradient(circle at 50% 50%, rgba(255, 245, 235, 0.75) 0%, rgba(245, 218, 185, 0.82) 40%, rgba(212, 162, 90, 0.92) 100%),
-    url('background.png') no-repeat center center fixed;
+
+  background:
+    linear-gradient(rgba(255,248,240,0.92),
+    rgba(255,248,240,0.92)),
+    url('background.png');
+
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: multiply;
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+
+  /* MOBILE BUG FIX */
+  background-attachment: scroll;
+
   border-radius: 36px;
   padding: 85px 45px;
   position: relative;
-  box-shadow: 
-    0 30px 75px rgba(109, 59, 31, 0.16), 
-    inset 0 0 50px rgba(255, 255, 255, 0.85),
-    0 0 0 1px rgba(212, 162, 90, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  /* Hover tilt removed as requested - Clean static stability */
+  overflow: hidden;
+
+  box-shadow:
+    0 30px 75px rgba(109, 59, 31, 0.16);
+
+  border: 1px solid rgba(255,255,255,0.7);
 }
 
 /* Double Golden Border Inside the Card */
@@ -984,7 +989,18 @@ body {
     font-size: 14px;
   }
 }
+@media (max-width:768px){
 
+  .invitation-card{
+
+    background-size: cover;
+    background-position: center top;
+
+    transform: translateZ(0);
+
+  }
+
+}
 @media (max-width: 480px) {
   .invitation-card {
     padding: 55px 15px;
