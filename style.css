@@ -605,36 +605,69 @@ body {
 }
 
 .venue-address-block {
+
   display: flex;
-  align-items: flex-start;
+
+  align-items: center;
+
   justify-content: center;
-  max-width: 460px;
-  margin-bottom: 25px;
+
+  gap: 14px;
+
+  max-width: 520px;
+
+  margin: 0 auto 25px;
+
+  text-align: left;
+
 }
 
 .venue-address-block i {
+
   color: var(--gold-primary);
-  font-size: 30px;
-  margin-top: 4px;
-  margin-right: 12px;
+
+  font-size: 28px;
+
+  flex-shrink: 0;
+
   animation: pulsePin 2s infinite;
-  text-align: center;
+
+  margin-top: 2px;
+
 }
 
 @keyframes pulsePin {
-  0% { transform: scale(1); filter: drop-shadow(0 0 0 var(--gold-glow)); }
-  50% { transform: scale(1.15); filter: drop-shadow(0 2px 6px var(--gold-glow)); }
-  100% { transform: scale(1); filter: drop-shadow(0 0 0 transparent); }
+
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 var(--gold-glow));
+  }
+
+  50% {
+    transform: scale(1.15);
+    filter: drop-shadow(0 2px 6px var(--gold-glow));
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+
 }
 
 .venue-address {
-  font-family: var(--font-sans);
-  font-size: 15px;
-  line-height: 1.7;
-  color: var(--text-brown);
-  text-align: center;
-}
 
+  font-family: var(--font-sans);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: var(--text-brown);
+
+  margin: 0;
+
+}  
 /* QR Code */
 .qr-container {
   width: 145px;
@@ -958,16 +991,22 @@ body {
     width: 100%;
   }
 
-  .venue-title {
-    font-size: 38px;
+  .venue-address-block{
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 10px;
+
   }
 
-  .venue-address-block {
-    padding: 0 15px;
-  }
+  .venue-address{
 
-  .venue-address {
+    text-align: center;
+
     font-size: 14px;
+
   }
 
   .qr-container {
