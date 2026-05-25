@@ -109,30 +109,35 @@ body {
 }
 
 .invitation-card {
+
   width: 100%;
   max-width: 860px;
 
   background:
-    linear-gradient(rgba(255,248,240,0.92),
-    rgba(255,248,240,0.92)),
-    url('background.png');
+  linear-gradient(
+    135deg,
+    rgba(255,255,255,0.18),
+    rgba(245,220,190,0.10)
+  ),
+  rgba(255,248,240,0.14);
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
 
-  /* MOBILE BUG FIX */
-  background-attachment: scroll;
-
-  border-radius: 36px;
-  padding: 85px 45px;
-  position: relative;
-  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.22);
 
   box-shadow:
-    0 30px 75px rgba(109, 59, 31, 0.16);
+  0 8px 32px rgba(0,0,0,0.10),
+  inset 0 1px 1px rgba(255,255,255,0.18);
 
-  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 36px;
+
+  padding: 85px 45px;
+
+  position: relative;
+
+  overflow: hidden;
+
 }
 
 /* Double Golden Border Inside the Card */
