@@ -614,10 +614,11 @@ body {
 
 .venue-address-block i {
   color: var(--gold-primary);
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 4px;
   margin-right: 12px;
   animation: pulsePin 2s infinite;
+  text-align: center;
 }
 
 @keyframes pulsePin {
@@ -631,7 +632,7 @@ body {
   font-size: 15px;
   line-height: 1.7;
   color: var(--text-brown);
-  text-align: left;
+  text-align: center;
 }
 
 /* QR Code */
